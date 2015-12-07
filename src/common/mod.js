@@ -1,5 +1,6 @@
 
 exports.test = function () {
+  var a = 2;
   return 1;
 };
 

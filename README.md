@@ -9,3 +9,12 @@ tsd query node --action install --save
 ```
 * to update `tsd reinstall --save`
 
+TODO:
+
+* linting something for typescript?
+* lint errors to console on save/reload?
+* test results to console on save? separate task for this?
+
+References used:
+https://github.com/JacksonGariety/gulp-nodemon/issues/85
+https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/
