@@ -1,8 +1,5 @@
 /*global describe,it*/
 
-// Entry point needs this to allow ES2015 code
-require('babel-register');
-
 var expect = require('chai').expect;
 
 var mod = require('../../common/mod.js');
