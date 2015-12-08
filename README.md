@@ -1,6 +1,9 @@
 Template for a state of the art Javascript project
 ==================================================
 
+Recommended SublimeText packages:
+* ArcticTypescript
+
 Setup notes:
 * To generate tsd.d.ts:
 ```

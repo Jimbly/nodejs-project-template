@@ -24,13 +24,12 @@ gulp.task('default', ['ts', 'watch']);
 
 // Compile typescript sources
 gulp.task('ts', function() {
-  gulp.src(config.tsFiles)
+  var tsProject = ts.createProject('tsconfig.json', {
+    sortOutput: true,
+  });
+  tsProject.src()
     .pipe(sourcemaps.init())
-    .pipe(ts({
-      module: 'commonjs',
-      target: 'ES5',
-      sortOutput: true,
-    }))
+    .pipe(ts(tsProject))
     .js
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build'));
