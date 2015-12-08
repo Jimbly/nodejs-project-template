@@ -1,7 +1,7 @@
 Template for a state of the art Javascript project
 ==================================================
 
-Recommended SublimeText packages:
+Used SublimeText 3 packages (if using TypeScript):
 * ArcticTypescript
 
 Setup notes:
@@ -10,12 +10,13 @@ Setup notes:
 npm install -g tsd
 tsd query node --action install --save
 ```
-* to update `tsd reinstall --save`
+* to update: `tsd reinstall --save`
 
 TODO:
-
-* linting something for typescript?
-* lint errors to console on save/reload?
+* client static assets
+* client TS files
+* client ES6 files
+* lint errors to console on save/reload? TypeScript just fails to compile, so maybe that's fine for TS files
 * test results to console on save? separate task for this?
 
 References used:
