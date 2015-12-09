@@ -23,7 +23,7 @@ var config = {
   "noempty":                 false,
   "nonew":                   false,
   "plusplus":                false,
-  "quotmark":                false,
+  "quotmark":                true, // JE: Be consistent
   "undef":                   true,
   "unused":                  true,
   "strict":                  false,

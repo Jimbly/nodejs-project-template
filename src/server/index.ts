@@ -1,13 +1,22 @@
 /// <reference path="../../typings/tsd.d.ts" />
+import assert = require('assert');
 import http = require('http');
+import express = require('express');
+import path = require('path');
 
-require('../common/mod.js');
+var mod = require('../common/mod.js');
+import mod2 = require('../common/mod2.ts');
 
-var server: http.Server = http.createServer((request: http.ServerRequest, response: http.ServerResponse) => {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.write('Hello World from our TypeScript app');
-    response.end();
+console.log(mod.uselet() + mod.uselet(), 2);
+
+var app = express();
+app.use(express.static(path.join(__dirname, '../client/')));
+// app.get('/', function (req, res) {
+//   res.send('Hello World!');
+// });
+
+var port = process.env.port || 3000;
+
+var server: http.Server = app.listen(port, function() {
+  console.log('Running server at http://localhost:' + port);
 });
-var port = process.env.port || 1337;
-server.listen(port);
-console.log('Running server at http://localhost:' + port);
