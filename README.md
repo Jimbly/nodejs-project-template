@@ -1,7 +1,7 @@
 Template for a state of the art Javascript project
 ==================================================
 
-* Files can be ES6 (through Babel) or TypeScript.
+* Files can be ES2015 (through Babel) or TypeScript.
 * Server automatically restarts on any relevant file change
 * Client automatically reloads on javascript or html change
 * Client automatically dynamically reloads CSS file changes
@@ -18,6 +18,7 @@ tsd query node --action install --save
 * to update: `tsd reinstall --save`
 
 TODO:
+* test not working on Windows
 * test results to console on save?
 * minify, bundle CSS
 * bundle vendor .js files?

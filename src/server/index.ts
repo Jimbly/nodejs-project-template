@@ -4,16 +4,14 @@ import http = require('http');
 import express = require('express');
 import path = require('path');
 
-var mod = require('../common/mod.js');
-import mod2 = require('../common/mod2.ts');
+// Check using both ES2015 and TypeScript modules
+var js_mod = require('../common/js_mod');
+import ts_mod = require('../common/ts_mod');
+console.log('jsmod: ' + js_mod.uselet() + ', tsmod: ' + ts_mod.uselet());
 
-console.log(mod.uselet() + mod.uselet(), 2);
-
+// Actual app begins
 var app = express();
 app.use(express.static(path.join(__dirname, '../client/')));
-// app.get('/', function (req, res) {
-//   res.send('Hello World!');
-// });
 
 var port = process.env.port || 3000;
 

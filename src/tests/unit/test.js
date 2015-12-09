@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 
 describe('#mod', function () {
-  var mod = require('../../common/mod.js');
+  var mod = require('../../common/js_mod.js');
   it('test', function () {
     expect(mod.test()).to.equal(1);
   });
@@ -17,8 +17,8 @@ describe('#mod', function () {
   });
 });
 
-describe('#mod2', function () {
-  var mod = require('../../common/mod2.js');
+describe('#ts_mod', function () {
+  var mod = require('../../common/ts_mod.js');
   it('test', function () {
     expect(mod.test()).to.equal(1);
   });

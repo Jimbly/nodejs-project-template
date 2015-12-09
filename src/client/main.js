@@ -1,8 +1,9 @@
 /*jshint browser:true*/
 
-var mod = require('../common/mod.js');
-var mod2 = require('../common/mod2.ts');
+var js_mod = require('../common/js_mod');
+var ts_mod = require('../common/ts_mod');
 
 window.addEventListener('load', function () {
-  document.getElementById('container').innerHTML = 'bar9' + mod.uselet() + mod2.uselet();
+  document.getElementById('container').innerHTML = js_mod.uselet() +
+    ts_mod.uselet();
 });
