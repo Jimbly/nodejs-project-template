@@ -6,7 +6,8 @@
             "folder_exclude_patterns":
             [
                 "node_modules",
-                "build"
+                "build",
+                "typings"
             ],
             "file_exclude_patterns": [],
             "path": "."

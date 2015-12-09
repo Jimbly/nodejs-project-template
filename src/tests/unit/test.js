@@ -2,32 +2,32 @@
 
 var expect = require('chai').expect;
 
-describe('#mod', function () {
+describe('#mod', () => {
   var mod = require('../../common/js_mod.js');
-  it('test', function () {
+  it('test', () => {
     expect(mod.test()).to.equal(1);
   });
 
-  it('let', function () {
+  it('let', () => {
     expect(mod.uselet()).to.equal(1);
   });
 
-  it('const', function () {
+  it('const', () => {
     expect(mod.useconst()).to.equal(1);
   });
 });
 
-describe('#ts_mod', function () {
+describe('#ts_mod', () => {
   var mod = require('../../common/ts_mod.js');
-  it('test', function () {
+  it('test', () => {
     expect(mod.test()).to.equal(1);
   });
 
-  it('let', function () {
+  it('let', () => {
     expect(mod.uselet()).to.equal(1);
   });
 
-  it('const', function () {
+  it('const', () => {
     expect(mod.useconst()).to.equal(1);
   });
 });
