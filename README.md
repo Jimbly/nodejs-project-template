@@ -18,6 +18,7 @@ tsd query node --action install --save
 * to update: `tsd reinstall --save`
 
 TODO:
+* TypeScript is not detecting unused var in ts_mod.ts, need a tshint?
 * test not working on Windows
 * test results to console on save?
 * minify, bundle CSS
@@ -26,3 +27,5 @@ TODO:
 References used:
 * https://github.com/JacksonGariety/gulp-nodemon/issues/85
 * https://pontifex.azurewebsites.net/my-typescript-project-structure-with-gulp/
+* https://github.com/sogko/gulp-recipes/blob/master/browser-sync-nodemon-expressjs/gulpfile.js
+* http://www.browsersync.io/docs/gulp/
